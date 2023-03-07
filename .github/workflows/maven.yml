@@ -15,7 +15,7 @@ jobs:
           java-version: '8' # Use single quotes for strings?
           distribution: 'adopt' # Use AdoptOpenJDK distribution 
       - name: Check current Directory and info (temporal)
-      - run: ls -R /home/runner/work/
+        run: ls -R /home/runner/work/
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Run Java Application
